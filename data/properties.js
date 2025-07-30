@@ -1,0 +1,58 @@
+export const properties = [
+  {
+    id: 1,
+    address: "123 Sunset Boulevard, San Francisco, CA",
+    price: "$1,250,000",
+    lat: 37.7849,
+    lng: -122.4094,
+  },
+  {
+    id: 2,
+    address: "456 Market Street, San Francisco, CA",
+    price: "$950,000",
+    lat: 37.7749,
+    lng: -122.4194,
+  },
+  {
+    id: 3,
+    address: "789 Mission Bay Drive, San Francisco, CA",
+    price: "$1,450,000",
+    lat: 37.7699,
+    lng: -122.3944,
+  },
+  {
+    id: 4,
+    address: "321 Pacific Heights Ave, San Francisco, CA",
+    price: "$2,100,000",
+    lat: 37.7949,
+    lng: -122.4294,
+  },
+  {
+    id: 5,
+    address: "654 Castro Street, San Francisco, CA",
+    price: "$1,100,000",
+    lat: 37.7649,
+    lng: -122.4344,
+  },
+  {
+    id: 6,
+    address: "987 Nob Hill Road, San Francisco, CA",
+    price: "$1,800,000",
+    lat: 37.7949,
+    lng: -122.4094,
+  },
+  {
+    id: 7,
+    address: "147 Chinatown Way, San Francisco, CA",
+    price: "$850,000",
+    lat: 37.7949,
+    lng: -122.4044,
+  },
+  {
+    id: 8,
+    address: "258 SOMA District, San Francisco, CA",
+    price: "$1,350,000",
+    lat: 37.7749,
+    lng: -122.4044,
+  },
+]
