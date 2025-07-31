@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Navigation, Satellite, Map, Pencil, X } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Navigation, Satellite, Map, Pencil, X } from "lucide-react";
 
 interface ToggleControlsProps {
-  onGeolocation: () => void
-  onMapTypeChange: (type: string) => void
-  onDrawingToggle: (enabled: boolean) => void
-  mapType: string
-  isDrawingMode: boolean
+  onGeolocation: () => void;
+  onMapTypeChange: (type: string) => void;
+  onDrawingToggle: (enabled: boolean) => void;
+  mapType: string;
+  isDrawingMode: boolean;
 }
 
 export function ToggleControls({
@@ -69,10 +69,14 @@ export function ToggleControls({
         variant={isDrawingMode ? "default" : "outline"}
         className={`${
           isDrawingMode
-            ? "bg-red-600 hover:bg-red-700 text-white shadow-xl animate-pulse"
+            ? "bg-red-600 hover:bg-red-700 text-white shadow-xl"
             : "bg-white backdrop-blur-sm hover:bg-green-50 border-2 border-green-200 text-green-700 shadow-xl"
         } font-['Urbanist',sans-serif] font-semibold transition-all duration-200 px-6 py-3`}
-        title={isDrawingMode ? "Exit drawing mode (click to stop)" : "Start drawing roof polygons"}
+        title={
+          isDrawingMode
+            ? "Exit drawing mode (click to stop)"
+            : "Start drawing roof polygons"
+        }
       >
         {isDrawingMode ? (
           <>
@@ -90,12 +94,15 @@ export function ToggleControls({
       {/* Drawing Instructions */}
       {isDrawingMode && (
         <div className="bg-red-50 border-2 border-red-200 rounded-lg p-3 max-w-xs">
-          <p className="text-sm font-semibold text-red-700 font-['Urbanist',sans-serif] mb-1">Drawing Mode Active</p>
+          <p className="text-sm font-semibold text-red-700 font-['Urbanist',sans-serif] mb-1">
+            Drawing Mode Active
+          </p>
           <p className="text-xs text-red-600 font-['Urbanist',sans-serif]">
-            Click on the map to start drawing a polygon around the roof area. Click "Stop Drawing" when finished.
+            Click on the map to start drawing a polygon around the roof area.
+            Click "Stop Drawing" when finished.
           </p>
         </div>
       )}
     </div>
-  )
+  );
 }
