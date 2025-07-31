@@ -8,13 +8,7 @@
   }
 }
 body {
-  font-family: var(--font-sans);
-  /* Other styles... */
-}
-
-/* You can still use the mono font for code blocks */
-pre, code {
-  font-family: var(--font-mono);
+  @apply font-sans;
 }
 @layer base {
   :root {
